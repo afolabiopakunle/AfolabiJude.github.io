@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI";
+  height: 100%;
+}
+
+#landing-page {
+  height: 100vh;
+  background: url("../img/56310274_2348678282080472_2695492131753033728_n.jpg") no-repeat center center/cover;
+}
+
+.cover {
+  padding: 0 1rem;
+
+  background-image: linear-gradient(to bottom, rgba(50, 50, 50, 1), rgba(0, 0, 0, 0));
+  /* background-image: linear-gradient(to bottom, black 10%, transparent); */
+}
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  color: white;
+  font-size: 1.4rem;
+}
+.links {
+  list-style: none;
+  display: flex;
+  /* margin-top: 1rem; */
+}
+#heading a {
+  text-decoration: none;
+}
+.links a {
+  justify-self: center;
+  padding: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.links a:hover {
+  background: rgba(50, 50, 50, 0.5);
+  border-radius: 0.2rem;
+  transition: 0.5s;
+}
+
+.site-title:hover {
+  color: rgba(30, 30, 30, 0.5);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#cta {
+  height: 100%;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  color: white;
+}
+
+#cta h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#cta p.lead {
+  font-size: 1.5rem;
+  max-width: 50%;
+}
+
+@media (max-width: 880px) {
+  #heading {
+    display: block;
+    flex-direction: column;
+    justify-self: flex-start;
+  }
+  #cta p.lead {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  #heading {
+    display: block;
+    flex-direction: column;
+    justify-self: flex-start;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .links a {
+    padding: 0.2rem 0.4rem 0 0;
+    margin: 1rem 0rem 1rem 0;
+  }
+  #cta {
+    height: 100%;
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+    color: white;
+  }
+
+  #cta h1 {
+    line-height: 2.8rem;
+  }
+
+  #cta p {
+    font-size: 0.7rem;
+  }
+  #cta p.lead {
+    width: 100%;
+    line-height: 1.4rem;
+  }
+}
